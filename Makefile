@@ -1,7 +1,9 @@
-default: clean build
+default: build
 
 ifeq (, $(shell which pio))
-$(error "Please install PlatformIO CLI")
+$(info Please install PlatformIO CLI)
+$(info See: https://docs.platformio.org/en/latest/core/installation.html#install-shell-commands)
+$(error ..)
 endif
 
 clean:
