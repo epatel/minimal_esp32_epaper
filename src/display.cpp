@@ -4,8 +4,10 @@
 
 #include "buff.h"
 #include "epd.h"
-#include "font.h"
 
+
+// Fake 2 colors by extending bitmap to double height
+// Draw in lower half (+HEIGHT) for second color (red)
 static U8G2_BITMAP _u8g2(WIDTH, HEIGHT * 2, U8G2_R0);
 
 Display::Display()

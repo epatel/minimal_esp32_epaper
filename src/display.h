@@ -3,6 +3,9 @@
 #define WIDTH 400
 #define HEIGHT 300
 
+#define BW(_x, _y) (_x), (_y)
+#define RED(_x, _y) (_x), ((_y)+HEIGHT)
+
 enum Color {
   white,
   black,
